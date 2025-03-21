@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using EComm.Enums;
+using EComm.Domain.Enums;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
     public class Shipping
     {
@@ -13,7 +13,7 @@ namespace EComm.Models
         public DateTime? DeliveryDate { get; set; }
 
         [Required, MaxLength(20)]
-        public ShippingStatus ShippingStatus { get; set; } = ShippingStatus.pending; 
+        public ShippingStatus ShippingStatus { get; set; } = ShippingStatus.pending;
 
 
         [Required, ForeignKey("Order")]

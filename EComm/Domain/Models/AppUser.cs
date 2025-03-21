@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
-    public class AppUser:IdentityUser
+    public class AppUser : IdentityUser
     {
         [Required, MaxLength(50)]
         public string FirstName { get; set; } = string.Empty;

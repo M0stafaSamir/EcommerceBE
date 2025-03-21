@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "EComm.Controllers.WeatherForecastController",
+    "ContainingType": "EComm.API.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
     "HttpMethod": "GET",

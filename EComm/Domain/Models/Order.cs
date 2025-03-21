@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using EComm.Enums;
+using EComm.Domain.Enums;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
     public class Order
     {

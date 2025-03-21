@@ -1,4 +1,4 @@
-﻿namespace EComm.Enums
+﻿namespace EComm.Domain.Enums
 {
     public enum PaymentStatus
     {

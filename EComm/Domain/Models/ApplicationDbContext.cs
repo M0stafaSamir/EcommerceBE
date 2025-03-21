@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
-    public class ApplicationDbContext:IdentityDbContext<AppUser>
+    public class ApplicationDbContext : IdentityDbContext<AppUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
 
         public DbSet<Product> Products { get; set; }
@@ -21,8 +21,8 @@ namespace EComm.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            
-          
+
+
 
             modelBuilder.Entity<Shipping>()
                 .HasOne(s => s.Order)

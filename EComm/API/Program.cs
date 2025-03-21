@@ -1,9 +1,8 @@
-﻿
-using EComm.Models;
+﻿using EComm.Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace EComm
+namespace EComm.API
 {
     public class Program
     {

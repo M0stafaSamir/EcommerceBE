@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
-    public class Review
+    public class WishList
     {
-
         [Key]
         public int Id { get; set; }
 
@@ -14,15 +13,6 @@ namespace EComm.Models
 
         [Required, ForeignKey("Customer")]
         public string CustomerId { get; set; }
-
-        [Required, Range(0, 5)]
-        public decimal Rating { get; set; } 
-
-      
-        public string? Comment { get; set; }
-
-        [Required, DataType(DataType.DateTime)]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public Product? Product { get; set; }
         public AppUser? Customer { get; set; }

@@ -184,8 +184,6 @@ E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.pdb
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.genruntimeconfig.cache
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\ref\EComm.dll
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.sourcelink.json
-E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\appsettings.Development.json
-E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\appsettings.json
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\EComm.staticwebassets.endpoints.json
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\EComm.exe
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\EComm.deps.json
@@ -370,3 +368,5 @@ E:\BACK-END-PROJECTS\EcommerceBE\EComm\obj\Debug\net8.0\refint\EComm.dll
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\obj\Debug\net8.0\EComm.pdb
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\obj\Debug\net8.0\EComm.genruntimeconfig.cache
 E:\BACK-END-PROJECTS\EcommerceBE\EComm\obj\Debug\net8.0\ref\EComm.dll
+E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\API\appsettings.Development.json
+E:\BACK-END-PROJECTS\EcommerceBE\EComm\bin\Debug\net8.0\API\appsettings.json

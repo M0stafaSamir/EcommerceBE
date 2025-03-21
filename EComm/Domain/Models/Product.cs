@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace EComm.Models
+namespace EComm.Domain.Models
 {
     public class Product
     {
@@ -44,6 +44,6 @@ namespace EComm.Models
 
         // Relationships
         public SubCategory? SubCategory { get; set; }
-        
+
     }
 }
