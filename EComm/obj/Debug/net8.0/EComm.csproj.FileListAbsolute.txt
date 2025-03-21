@@ -183,3 +183,4 @@ E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\refint\EComm.dll
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.pdb
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.genruntimeconfig.cache
 E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\ref\EComm.dll
+E:\AngularProject\BackEnd\EComm\EComm\obj\Debug\net8.0\EComm.sourcelink.json

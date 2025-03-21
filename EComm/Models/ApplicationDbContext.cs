@@ -17,6 +17,20 @@ namespace EComm.Models
         public DbSet<WishList> WishLists { get; set; }
         public DbSet<Shipping> Shippings { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            
+          
+
+            modelBuilder.Entity<Shipping>()
+                .HasOne(s => s.Order)
+                .WithOne()
+                .HasForeignKey<Shipping>(s => s.OrderId)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
+
 
 
     }
