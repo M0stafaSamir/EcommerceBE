@@ -1,4 +1,6 @@
 ﻿using EComm.Domain.Models;
+using EComm.Infrastructure.Interfaces;
+using EComm.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +18,7 @@ namespace EComm.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IOrderRepository,OrderRepository>(); 
 
 
             //  Configure Database Context

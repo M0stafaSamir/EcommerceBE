@@ -18,8 +18,8 @@ namespace EComm.API.Controllers
         //GET /api/orders/{id}
 
 
-// GET: api/<OrdersController>
-[HttpGet]
+        // GET: api/<OrdersController>
+        [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
