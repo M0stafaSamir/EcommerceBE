@@ -13,7 +13,8 @@ namespace EComm.Domain.Models
         public DateTime Date { get; set; } = DateTime.UtcNow;
 
         [Required, Column(TypeName = "decimal(18,2)")]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        
+        //[DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public decimal TotalAmount { get; set; }
 
         [Required, ForeignKey("Customer")]

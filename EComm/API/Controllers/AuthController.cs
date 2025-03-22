@@ -7,5 +7,10 @@ namespace EComm.API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+
+        //POST /api/auth/login
+        //POST /api/auth/register
+        //POST /api/auth/forgot-password
+        //POST /api/auth/reset-password
     }
 }

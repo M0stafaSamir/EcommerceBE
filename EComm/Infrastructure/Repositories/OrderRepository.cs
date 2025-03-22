@@ -13,13 +13,22 @@ namespace EComm.Infrastructure.Repositories
         }
         public async Task deleteOrder(int id)
         {
-            _context.Orders.Remove(await GetOrder(id));
-            await _context.SaveChangesAsync(); 
+            var order = await GetOrder(id);
+            if (order != null) {
+
+                _context.Orders.Remove(order);
+                await _context.SaveChangesAsync();
+            }
+
         }
 
-        public async Task<Order> GetOrder(int id)
+        public async Task<Order?> GetOrder(int id)
         {
-            return await _context.Orders.FirstOrDefaultAsync(o => o.Id == id);
+            return await _context.Orders
+                .Include(o=>o.Customer)
+                .Include(o=>o.OrderItems)
+                //.ThenInclude(o=>o.Product)
+                .FirstOrDefaultAsync(o => o.Id == id);
         }
 
         public async Task<IEnumerable<Order>> GetOrders()
@@ -39,5 +48,22 @@ namespace EComm.Infrastructure.Repositories
             await _context.SaveChangesAsync();
 
         }
+
+
+        public async Task<OrderItem?> GetOrderItem(int orderItemId)
+        {
+            return await _context.OrderItems
+                .Include(oi => oi.Order)
+                .Include(oi => oi.Product)
+                .FirstOrDefaultAsync(oi => oi.Id == orderItemId); 
+        }
+        public async Task<IEnumerable<OrderItem>> GetOrderItems(int OrderID)
+        {
+            return await _context.OrderItems
+                .Where(oi => oi.OrderId == OrderID)
+                .Include(oi => oi.Product)
+                .ToListAsync();
+        }
+
     }
 }
