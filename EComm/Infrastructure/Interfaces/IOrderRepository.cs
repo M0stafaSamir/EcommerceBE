@@ -9,7 +9,6 @@ namespace EComm.Infrastructure.Interfaces
         public Task setOrder(Order order);
         public Task deleteOrder(int id);    
         public Task updateOrder(Order order);
-
         public Task<OrderItem?> GetOrderItem(int orderItemId);
         public Task<IEnumerable<OrderItem>> GetOrderItems(int OrderID); 
 
