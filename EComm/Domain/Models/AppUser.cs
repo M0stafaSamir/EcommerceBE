@@ -9,6 +9,7 @@ namespace EComm.Domain.Models
         public string FirstName { get; set; } = string.Empty;
         [Required, MaxLength(50)]
         public string LastName { get; set; } = string.Empty;
+
         public string? ProfileImage { get; set; }
         public bool IsActive { get; set; } = true;
 
