@@ -25,12 +25,12 @@ namespace EComm.Infrastructure.Repositories
 
         public async Task<IEnumerable<Category>> GetAllCategories()
         {
-           return await _context.Categories.ToListAsync();
+           return await _context.Categories.Include(c=>c.SubCategories).ToListAsync();
         }
 
         public async Task<Category?> GetCategory(int id)
         {
-            return await _context.Categories.FirstOrDefaultAsync(c => c.Id == id); 
+            return await _context.Categories.Include(c=>c.SubCategories).FirstOrDefaultAsync(c => c.Id == id); 
         }
 
         public async Task SetCategory(Category category)
