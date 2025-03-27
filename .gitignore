@@ -1,13 +1,42 @@
-# Ignore Visual Studio files
-.vs/
-.vs/EComm/DesignTimeBuild/.dtbcache.v2
-.vs/EComm/DesignTimeBuild/.dtbcache.v2
-/.vs
-/.vs
-.vs/EComm/v17/DocumentLayout.json
-.vs/EComm/v17/DocumentLayout.backup.json
-.vs/EComm/v17/.suo
-.vs/EComm/FileContentIndex/cb5bca32-a20d-4f34-83b8-4863f9c4df44.vsidx
-.vs/EComm/FileContentIndex/a9553c27-47e7-4316-8312-c1b872511d0e.vsidx
-.vs/EComm/FileContentIndex/286d2845-e8f1-438b-a173-d614f0bf6d69.vsidx
-.vs/EComm/DesignTimeBuild/.dtbcache.v2
+# Ignore packages
+packages/
+!packages/repositories.config
+
+# Ignore dependencies
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore user secrets (if using)
+secrets.json
+appsettings.Development.json
+
+# Ignore .NET Core configuration files
+*.swp
+*.swo
+
+# Ignore logs and debug files
+*.log
+
+# Ignore Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Ignore Resharper files
+*.DotSettings.user
+
+# Ignore NPM and Node.js dependencies
+node_modules/
+
+# Ignore publish output
+publish/
+wwwroot/
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# Ignore environment files
+.env
+
+.vs
