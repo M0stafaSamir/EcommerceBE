@@ -40,3 +40,6 @@ wwwroot/
 .env
 
 .vs
+/EComm/obj
+/EComm/obj/Debug
+/EComm/obj/Debug/net8.0
