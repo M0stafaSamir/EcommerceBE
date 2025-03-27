@@ -47,8 +47,6 @@ namespace EComm.Application.Services
                 return null;
             }
         }
-
-
         public bool IsAuthenticated => throw new NotImplementedException();
 
         public Task<string> login(string email, string password)
