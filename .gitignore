@@ -53,3 +53,4 @@ wwwroot/
 # Ignore database files
 *.cache
 /EComm/obj
+/EComm/obj
