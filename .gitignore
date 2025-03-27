@@ -1,3 +1,15 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore build output
+bin/
+obj/
+**/obj/
+
 # Ignore packages
 packages/
 !packages/repositories.config
@@ -38,8 +50,3 @@ wwwroot/
 
 # Ignore environment files
 .env
-
-.vs
-/EComm/obj
-/EComm/obj/Debug
-/EComm/obj/Debug/net8.0
